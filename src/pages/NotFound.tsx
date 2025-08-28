@@ -12,12 +12,15 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="text-center container-custom">
+        <h1 className="text-h1 text-bordeaux mb-4">404</h1>
+        <p className="text-lead text-gray-600 mb-6">Oops! Página não encontrada</p>
+        <a 
+          href="/" 
+          className="inline-flex items-center gap-2 text-bordeaux hover:text-bordeaux-700 font-medium link-underline"
+        >
+          Voltar ao início
         </a>
       </div>
     </div>

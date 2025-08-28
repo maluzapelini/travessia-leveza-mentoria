@@ -19,6 +19,18 @@ export default {
 		},
 		extend: {
 			colors: {
+				/* Brand Colors */
+				bordeaux: {
+					DEFAULT: 'hsl(var(--bordeaux))',
+					700: 'hsl(var(--bordeaux-700))',
+					900: 'hsl(var(--bordeaux-900))',
+				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					600: 'hsl(var(--gold-600))',
+					300: 'hsl(var(--gold-300))',
+				},
+				/* Semantic Colors */
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -63,10 +75,23 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				heading: ['Playfair Display', 'serif'],
+				body: ['Inter', 'system-ui', 'sans-serif'],
+				accent: ['Lora', 'serif'],
+			},
+			spacing: {
+				'18': '4.5rem',
+				'22': '5.5rem',
+				'26': '6.5rem',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-lg)',
 			},
 			keyframes: {
 				'accordion-down': {
