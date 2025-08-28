@@ -32,7 +32,7 @@ const ComoFunciona = () => {
   return (
     <section id="como-funciona" className="section-padding bg-gray-50">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-h2 text-bordeaux mb-4">
             Como funciona na prática
           </h2>
@@ -41,16 +41,17 @@ const ComoFunciona = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Steps */}
           <div className="space-y-8">
-            {steps.map((step) => {
+            {steps.map((step, index) => {
               const IconComponent = step.icon;
+              const animationDelay = index === 0 ? 'animate-delay-100' : index === 1 ? 'animate-delay-200' : index === 2 ? 'animate-delay-300' : 'animate-delay-500';
               return (
-                <div key={step.n} className="flex gap-6">
-                  <div className="w-12 h-12 bg-bordeaux text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                <div key={step.n} className={`flex gap-6 animate-slide-in-left ${animationDelay}`}>
+                  <div className="w-12 h-12 bg-bordeaux text-white rounded-full flex items-center justify-center font-bold flex-shrink-0 animate-bounce-subtle">
                     {step.n}
                   </div>
                   <div className="pt-1">
                     <div className="flex items-center gap-3 mb-3">
-                      <IconComponent className="w-5 h-5 text-gold" />
+                      <IconComponent className="w-5 h-5 text-gold animate-float" />
                       <h3 className="text-h3 text-bordeaux">
                         {step.title}
                       </h3>
@@ -65,10 +66,10 @@ const ComoFunciona = () => {
           </div>
           
           {/* Aside Info */}
-          <div className="lg:sticky lg:top-32">
-            <div className="bg-white rounded-2xl p-8 shadow-elegant">
-              <div className="inline-flex items-center gap-2 bg-gold/20 text-bordeaux px-3 py-1 rounded-full text-sm font-medium mb-6">
-                <div className="w-2 h-2 bg-gold rounded-full" />
+          <div className="lg:sticky lg:top-32 animate-slide-in-right animate-delay-300">
+            <div className="bg-white rounded-2xl p-8 shadow-elegant animate-scale-in">
+              <div className="inline-flex items-center gap-2 bg-gold/20 text-bordeaux px-3 py-1 rounded-full text-sm font-medium mb-6 animate-pulse-soft">
+                <div className="w-2 h-2 bg-gold rounded-full animate-bounce-subtle" />
                 Vagas limitadas
               </div>
               
@@ -81,22 +82,20 @@ const ComoFunciona = () => {
               </p>
               
               <div className="space-y-3 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-gold rounded-full" />
-                  <span>Máximo 8 participantes por turma</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-gold rounded-full" />
-                  <span>Encontros online ao vivo</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-gold rounded-full" />
-                  <span>Material de apoio exclusivo</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-gold rounded-full" />
-                  <span>Suporte entre sessões</span>
-                </div>
+                {[
+                  "Máximo 8 participantes por turma",
+                  "Encontros online ao vivo",
+                  "Material de apoio exclusivo",
+                  "Suporte entre sessões"
+                ].map((item, index) => {
+                  const animationDelay = index === 0 ? 'animate-delay-100' : index === 1 ? 'animate-delay-200' : index === 2 ? 'animate-delay-300' : 'animate-delay-500';
+                  return (
+                    <div key={index} className={`flex items-center gap-2 animate-fade-in ${animationDelay}`}>
+                      <div className="w-1.5 h-1.5 bg-gold rounded-full animate-pulse-soft" />
+                      <span>{item}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
