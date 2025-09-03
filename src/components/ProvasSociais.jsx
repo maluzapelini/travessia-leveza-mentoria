@@ -1,25 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button-custom';
 
 const ProvasSociais = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
     {
-      name: "Patrícia, 47",
-      quote: "Voltei a dormir e a dizer não sem culpa. A Malu me ajudou a entender que cuidar de mim não é egoísmo."
+      quote: "Voltei a dormir e a dizer não sem culpa. A Malu me ajudou a entender que cuidar de mim não é egoísmo.",
+      author: "Mulher, 47 anos"
     },
     {
-      name: "Renata, 42", 
-      quote: "Aprendi a desacelerar sem me sentir fracassando. Hoje consigo respirar entre uma tarefa e outra."
+      quote: "Aprendi a desacelerar sem me sentir fracassando. Hoje consigo respirar entre uma tarefa e outra.",
+      author: "Mulher, 42 anos"
     },
     {
-      name: "Carolina, 51",
-      quote: "Voltei a me ver com carinho — e isso mudou tudo. Minha família também percebeu a diferença."
-    },
-    {
-      name: "Fernanda, 46",
-      quote: "Finalmente entendi que não preciso ser perfeita para ser boa mãe, esposa e profissional."
+      quote: "Voltei a me ver com carinho — e isso mudou tudo. Minha família também percebeu a diferença.",
+      author: "Mulher, 51 anos"
     }
   ];
 
@@ -41,7 +38,7 @@ const ProvasSociais = () => {
   return (
     <section id="provas" className="section-padding bg-bordeaux text-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-h2 text-white mb-4">
             Histórias reais de transformação
           </h2>
@@ -53,18 +50,18 @@ const ProvasSociais = () => {
             ))}
             <span className="ml-2 text-white/90 font-medium">4.9/5</span>
           </div>
-          <p className="text-white/80 text-sm">Baseado em 132 avaliações</p>
+          <p className="text-white/80 text-sm">Baseado em avaliações reais</p>
         </div>
         
         {/* Carousel */}
-        <div className="max-w-4xl mx-auto relative">
+        <div className="max-w-4xl mx-auto relative mb-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 text-center min-h-[200px] flex items-center">
             <div className="w-full">
               <blockquote className="text-xl md:text-2xl font-accent italic mb-6 text-white">
                 "{testimonials[currentIndex].quote}"
               </blockquote>
               <cite className="text-gold font-medium text-lg">
-                — {testimonials[currentIndex].name}
+                — {testimonials[currentIndex].author}
               </cite>
             </div>
           </div>
@@ -101,6 +98,16 @@ const ProvasSociais = () => {
               <ChevronRight className="w-6 h-6 text-white" />
             </button>
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center animate-fade-up animate-delay-500">
+          <Button variant="hero" size="lg" className="bg-gold text-bordeaux hover:bg-gold-600" asChild>
+            <a href="#form" className="flex items-center gap-2">
+              Quero ser vista
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>

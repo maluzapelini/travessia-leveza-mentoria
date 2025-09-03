@@ -16,18 +16,17 @@ const Header = () => {
 
   const navItems = [
     { label: "Início", href: "#hero" },
-    { label: "A Travessia", href: "#proposta" },
+    { label: "O que você vai viver", href: "#viver" },
+    { label: "Estrutura", href: "#estrutura" },
     { label: "Para Quem", href: "#para-quem" },
-    { label: "Como Funciona", href: "#como-funciona" },
     { label: "Depoimentos", href: "#provas" },
-    { label: "Sobre a Malu", href: "#sobre" },
     { label: "Perguntas", href: "#faq" }
   ];
 
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-white/90 backdrop-blur-sm'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-elegant' : 'bg-white/90 backdrop-blur-sm'
       }`}
       style={{ 
         borderBottom: isScrolled ? '1px solid hsl(var(--gold) / 0.4)' : 'none'
@@ -40,7 +39,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#hero" className="font-heading font-bold text-xl text-bordeaux">
-              Malu Zapelini
+              Travessia Mulher
             </a>
           </div>
 
@@ -62,7 +61,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center">
             <Button variant="primary" size="sm" asChild>
               <a href="#form" className="flex items-center gap-2">
-                Lista de Espera
+                Quero fazer a Travessia
                 <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
@@ -95,7 +94,7 @@ const Header = () => {
               <div className="pt-4">
                 <Button variant="primary" size="sm" className="w-full" asChild>
                   <a href="#form" onClick={() => setIsMenuOpen(false)}>
-                    Lista de Espera
+                    Quero fazer a Travessia
                   </a>
                 </Button>
               </div>

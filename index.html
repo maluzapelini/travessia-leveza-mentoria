@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travessia Mulher — Eu Te Vejo | Mentoria para Mulheres 40+</title>
     <meta name="description" content="Um espaço para mulheres 40+ cansadas encontrarem descanso, dignidade e esperança em 3 meses. Mentoria com Malu Zapelini, psicóloga CRP12: 07082." />
+    <meta name="keywords" content="mentoria feminina, mulheres 40+, saúde emocional, psicologia, autoestima, bem-estar" />
     <meta name="author" content="Malu Zapelini" />
     
     <!-- Google Fonts -->
@@ -12,18 +13,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Travessia Mulher — Eu Te Vejo | Mentoria para Mulheres 40+" />
     <meta property="og:description" content="Um espaço para mulheres 40+ cansadas encontrarem descanso, dignidade e esperança em 3 meses." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:url" content="https://travessiamulher.com.br" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="Travessia Mulher — Eu Te Vejo" />
+    <meta name="twitter:description" content="Mentoria para mulheres 40+ encontrarem leveza e direção." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Meta Pixel (placeholder) -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

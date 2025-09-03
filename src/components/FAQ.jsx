@@ -5,34 +5,26 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button-custom';
 
 const FAQ = () => {
   const faqs = [
     {
       q: "Qual a duração da mentoria?",
-      a: "A mentoria tem duração de 3 meses, com encontros semanais de 90 minutos e materiais de apoio assíncronos para consolidar o aprendizado entre as sessões."
+      a: "A mentoria tem duração de 3 meses, com 6 aulas gravadas e 6 encontros ao vivo quinzenais, além de materiais de apoio."
     },
     {
       q: "É terapia?",
-      a: "É uma mentoria com base terapêutica, focada em ferramentas práticas e direcionamento. Não substitui psicoterapia formal quando há necessidade de acompanhamento clínico mais intensivo."
+      a: "É uma mentoria com base terapêutica, focada em ferramentas práticas e direcionamento. Não substitui psicoterapia quando há necessidade clínica."
     },
     {
       q: "Como são os encontros?",
-      a: "Os encontros são online, ao vivo, em formato de grupo pequeno (máximo 8 participantes). Também há sessões individuais pontuais conforme a necessidade de cada participante."
-    },
-    {
-      q: "Posso sair antes do prazo?",
-      a: "Você pode sair quando quiser, mas incentivamos fortemente que complete as 12 semanas para consolidar os ganhos e criar mudanças duradouras em sua rotina."
+      a: "Os encontros são online, ao vivo, em formato de grupo pequeno. Também há o círculo de escuta para apoio contínuo."
     },
     {
       q: "Qual o investimento?",
-      a: "O valor será informado durante a chamada de acolhimento, pois pode variar conforme sua situação. Oferecemos opções de parcelamento para facilitar o acesso."
-    },
-    {
-      q: "Como sei se vou conseguir me comprometer?",
-      a: "Durante nossa conversa inicial, vamos avaliar juntas se este é o momento ideal para você. O compromisso principal é dedicar 2-3 horas por semana para os encontros e atividades."
+      a: "O valor será informado durante a chamada de acolhimento. Oferecemos opções de parcelamento para facilitar o acesso."
     }
   ];
 
@@ -40,18 +32,21 @@ const FAQ = () => {
     <section id="faq" className="section-padding">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-up">
             <h2 className="text-h2 text-bordeaux mb-4">
               Perguntas frequentes
             </h2>
+            <p className="text-lead text-gray-600">
+              Esclarecemos suas principais dúvidas
+            </p>
           </div>
           
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-4 mb-12">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-white rounded-xl border border-gray-200 px-6"
+                className="bg-white rounded-xl border border-gray-200 px-6 shadow-soft hover:shadow-elegant transition-shadow"
               >
                 <AccordionTrigger className="text-left text-bordeaux font-medium hover:text-bordeaux-700">
                   {faq.q}
@@ -63,8 +58,8 @@ const FAQ = () => {
             ))}
           </Accordion>
           
-          <div className="text-center mt-12">
-            <div className="bg-gray-50 rounded-2xl p-8">
+          <div className="text-center">
+            <div className="bg-gray-50 rounded-2xl p-8 mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <MessageCircle className="w-6 h-6 text-bordeaux" />
                 <h3 className="text-h3 text-bordeaux">
@@ -80,6 +75,14 @@ const FAQ = () => {
                 </a>
               </Button>
             </div>
+
+            {/* CTA */}
+            <Button variant="primary" size="lg" asChild>
+              <a href="#form" className="flex items-center gap-2">
+                Quero fazer a Travessia
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>

@@ -1,15 +1,12 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import IdentificacaoDor from '@/components/IdentificacaoDor';
-import Proposta from '@/components/Proposta';
-import ComoFunciona from '@/components/ComoFunciona';
+import OQueVaiViver from '@/components/OQueVaiViver';
+import EstruturaMentoria from '@/components/EstruturaMentoria';
 import ParaQuem from '@/components/ParaQuem';
 import ProvasSociais from '@/components/ProvasSociais';
-import SobreMalu from '@/components/SobreMalu';
 import FAQ from '@/components/FAQ';
 import FormularioCaptura from '@/components/FormularioCaptura';
-import CTAFinal from '@/components/CTAFinal';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -18,15 +15,12 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <IdentificacaoDor />
-        <Proposta />
-        <ComoFunciona />
+        <OQueVaiViver />
+        <EstruturaMentoria />
         <ParaQuem />
         <ProvasSociais />
-        <SobreMalu />
         <FAQ />
         <FormularioCaptura />
-        <CTAFinal />
       </main>
       <Footer />
     </>

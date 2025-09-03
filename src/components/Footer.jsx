@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Shield, CreditCard } from 'lucide-react';
+import { Mail, Shield, Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,20 +8,20 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       <div className="container-custom">
         {/* Main Footer */}
-        <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <div className="mb-6">
               <h3 className="font-heading font-bold text-2xl text-gold mb-2">
-                Malu Zapelini
+                Travessia Mulher
               </h3>
               <p className="text-gray-300 text-body max-w-md">
-                Psicóloga especializada em saúde emocional feminina. 
-                Ajudando mulheres 40+ a encontrarem leveza e direção.
+                Mentoria para mulheres 40+ que buscam reencontrar sua leveza e direção na vida.
               </p>
             </div>
             
             <div className="space-y-2 text-sm text-gray-400">
+              <p>Com Malu Zapelini</p>
               <p>CRP12: 07082</p>
               <p>16+ anos de experiência</p>
             </div>
@@ -34,13 +34,18 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-gray-300">
               <li>
-                <a href="#proposta" className="hover:text-gold transition-colors link-underline">
-                  A Travessia
+                <a href="#viver" className="hover:text-gold transition-colors link-underline">
+                  O que você vai viver
                 </a>
               </li>
               <li>
-                <a href="#como-funciona" className="hover:text-gold transition-colors link-underline">
-                  Como Funciona
+                <a href="#estrutura" className="hover:text-gold transition-colors link-underline">
+                  Estrutura
+                </a>
+              </li>
+              <li>
+                <a href="#para-quem" className="hover:text-gold transition-colors link-underline">
+                  Para quem é
                 </a>
               </li>
               <li>
@@ -67,8 +72,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#sobre" className="hover:text-gold transition-colors link-underline">
-                  Quem é a Malu
+                <a href="#form" className="hover:text-gold transition-colors link-underline">
+                  Fazer a Travessia
                 </a>
               </li>
             </ul>
@@ -83,8 +88,8 @@ const Footer = () => {
               <span>LGPD Ready</span>
             </div>
             <div className="flex items-center gap-2">
-              <CreditCard className="w-4 h-4 text-gold" />
-              <span>Pagamentos Seguros</span>
+              <Heart className="w-4 h-4 text-gold" />
+              <span>Acolhimento Profissional</span>
             </div>
           </div>
         </div>

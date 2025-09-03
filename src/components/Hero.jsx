@@ -1,17 +1,15 @@
 import React from 'react';
 import { Button } from '@/components/ui/button-custom';
-import { ArrowRight, Shield, Award, Lock } from 'lucide-react';
-import heroImage from '@/assets/hero-malu.jpg';
+import { ArrowRight, Shield, Award, Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20">
       {/* Background with overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        className="absolute inset-0 bg-gradient-to-br from-bordeaux via-bordeaux-700 to-bordeaux-900"
       />
-      <div className="absolute inset-0 bg-black/35" />
+      <div className="absolute inset-0 bg-black/20" />
       
       {/* Content */}
       <div className="relative z-10 container-custom">
@@ -52,19 +50,19 @@ const Hero = () => {
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up animate-delay-500">
-            <Button variant="hero" size="lg" asChild className="animate-bounce-subtle">
+            <Button variant="hero" size="lg" asChild className="animate-bounce-subtle bg-gold text-bordeaux hover:bg-gold-600">
               <a href="#form" className="flex items-center gap-2">
-                Quero entrar na lista de espera
+                Quero fazer a Travessia
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" className="text-white border-white/30 hover:bg-white/10 animate-scale-in animate-delay-300" asChild>
-              <a href="#como-funciona">Como funciona</a>
+              <a href="#estrutura">Como funciona</a>
             </Button>
           </div>
           
           {/* Trust Signals */}
-          <div className="flex flex-wrap gap-6 text-sm text-white/80">
+          <div className="flex flex-wrap gap-6 text-sm text-white/80 animate-fade-up animate-delay-700">
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-gold" />
               <span>Atuação ética (CRP12: 07082)</span>
@@ -74,8 +72,8 @@ const Hero = () => {
               <span>16+ anos de experiência</span>
             </div>
             <div className="flex items-center gap-2">
-              <Lock className="w-4 h-4 text-gold" />
-              <span>Seus dados protegidos (LGPD)</span>
+              <Heart className="w-4 h-4 text-gold" />
+              <span>Abordagem acolhedora e firme</span>
             </div>
           </div>
         </div>

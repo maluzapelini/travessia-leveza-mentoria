@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "Travessia Mulher — Eu Te Vejo | Mentoria para Mulheres 40+",
+    "description": "Um espaço para mulheres 40+ cansadas encontrarem descanso, dignidade e esperança em 3 meses. Mentoria com Malu Zapelini, psicóloga CRP12: 07082.",
+    "keywords": "mentoria feminina, mulheres 40+, saúde emocional, psicologia, autoestima, bem-estar"
+  },
+  "hero": {
+    "eyebrow": "Mentoria para Mulheres 40+",
+    "title": "Eu Te Vejo, Mulher — A Travessia da Exaustão para a Leveza",
+    "subtitle": "Um espaço para mulheres 40+ cansadas encontrarem descanso, dignidade e esperança em 3 meses.",
+    "bullets": [
+      "Sem fórmulas mágicas — direção terapêutica e prática.",
+      "Ferramentas semanais com acompanhamento.",
+      "Suporte acolhedor e firme para retomar sua força."
+    ],
+    "cta_primary": "Quero fazer a Travessia",
+    "cta_secondary": "Como funciona"
+  },
+  "viver": {
+    "title": "O que você vai viver na Travessia",
+    "subtitle": "Transformação integral em 4 dimensões da sua vida",
+    "cards": [
+      {
+        "title": "Física",
+        "description": "Reconectar com seu corpo, estabelecer limites saudáveis e criar rotinas de autocuidado sustentáveis."
+      },
+      {
+        "title": "Emocional", 
+        "description": "Acolher suas emoções sem julgamento, desenvolver autocompaixão e fortalecer sua autoestima."
+      },
+      {
+        "title": "Espiritual",
+        "description": "Reencontrar seu propósito, valores essenciais e conexão com algo maior que você."
+      },
+      {
+        "title": "Existencial",
+        "description": "Redefinir prioridades, criar significado nas suas escolhas e construir uma vida alinhada."
+      }
+    ]
+  },
+  "estrutura": {
+    "title": "Estrutura da Mentoria",
+    "subtitle": "Um programa completo de 3 meses para sua transformação",
+    "steps": [
+      {
+        "title": "6 Aulas Gravadas",
+        "description": "Conteúdo terapêutico estruturado para assistir no seu ritmo"
+      },
+      {
+        "title": "6 Encontros ao Vivo",
+        "description": "Sessões quinzenais em grupo para prática e acolhimento"
+      },
+      {
+        "title": "PDFs de Apoio",
+        "description": "Materiais práticos para aplicar no dia a dia"
+      },
+      {
+        "title": "Círculo de Escuta",
+        "description": "Grupo privado para compartilhar e receber apoio"
+      }
+    ]
+  },
+  "paraQuem": {
+    "title": "É para você se...",
+    "positive": [
+      "Tem 40+ e sente que perdeu a leveza do dia a dia",
+      "Quer direção com acolhimento, sem papo raso",
+      "Está disposta a pequenas ações consistentes",
+      "Busca um espaço seguro para se expressar"
+    ],
+    "negative": [
+      "Procura solução mágica sem compromisso",
+      "Não está disposta a olhar para si com honestidade"
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "Voltei a dormir e a dizer não sem culpa. A Malu me ajudou a entender que cuidar de mim não é egoísmo.",
+      "author": "Mulher, 47 anos"
+    },
+    {
+      "quote": "Aprendi a desacelerar sem me sentir fracassando. Hoje consigo respirar entre uma tarefa e outra.",
+      "author": "Mulher, 42 anos"
+    },
+    {
+      "quote": "Voltei a me ver com carinho — e isso mudou tudo. Minha família também percebeu a diferença.",
+      "author": "Mulher, 51 anos"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Qual a duração da mentoria?",
+      "answer": "A mentoria tem duração de 3 meses, com 6 aulas gravadas e 6 encontros ao vivo quinzenais, além de materiais de apoio."
+    },
+    {
+      "question": "É terapia?",
+      "answer": "É uma mentoria com base terapêutica, focada em ferramentas práticas e direcionamento. Não substitui psicoterapia quando há necessidade clínica."
+    },
+    {
+      "question": "Como são os encontros?",
+      "answer": "Os encontros são online, ao vivo, em formato de grupo pequeno. Também há o círculo de escuta para apoio contínuo."
+    },
+    {
+      "question": "Qual o investimento?",
+      "answer": "O valor será informado durante a chamada de acolhimento. Oferecemos opções de parcelamento para facilitar o acesso."
+    }
+  ],
+  "form": {
+    "title": "Quero fazer a Travessia",
+    "subtitle": "Preencha o formulário e entraremos em contato em até 24h",
+    "fields": {
+      "nome": "Nome completo",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp (opcional)",
+      "momento": "Qual é seu maior desafio hoje? (opcional)"
+    },
+    "consent": "Autorizo o uso dos meus dados para contato conforme a LGPD.",
+    "cta": "Quero ser vista"
+  }
+}
