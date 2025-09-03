@@ -1,13 +1,15 @@
 import React from 'react';
 import { Button } from '@/components/ui/button-custom';
 import { ArrowRight, Shield, Award, Heart } from 'lucide-react';
+import heroImage from '@/assets/hero-malu.jpg';
 
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20">
       {/* Background with overlay */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-bordeaux via-bordeaux-700 to-bordeaux-900"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroImage})` }}
       />
       <div className="absolute inset-0 bg-black/20" />
       
